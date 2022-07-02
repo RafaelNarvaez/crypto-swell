@@ -48,7 +48,7 @@ const CreateItem = () => {
     [isDragActive, isDragReject, isDragAccept],
   );
 
-  const [formInput, updateFormInput] = useState({ price: '', name: '', description: '' });
+  const [formInput, updateFormInput] = useState({ price: '', name: '', description: '', sqft: '', site: '', taxCode: '', registry: '' });
   const router = useRouter();
 
   const createMarket = async () => {
@@ -78,7 +78,7 @@ const CreateItem = () => {
   return (
     <div className="flex justify-center sm:px-4 p-12">
       <div className="w-3/5 md:w-full">
-        <h1 className="font-poppins dark:text-white text-nft-black-1 font-semibold text-2xl">Create new item</h1>
+        <h1 className="font-poppins dark:text-white text-nft-black-1 font-semibold text-2xl">Create new NFT</h1>
 
         <div className="mt-16">
           <p className="font-poppins dark:text-white text-nft-black-1 font-semibold text-xl">Upload file</p>
@@ -118,22 +118,46 @@ const CreateItem = () => {
 
         <Input
           inputType="input"
-          title="Name"
-          placeholder="Asset Name"
+          title="Property"
+          placeholder="Property Address"
           handleClick={(e) => updateFormInput({ ...formInput, name: e.target.value })}
+        />
+        <Input
+          inputType="input"
+          title="Square foot"
+          placeholder="Property Sqft"
+          handleClick={(e) => updateFormInput({ ...formInput, sqft: e.target.value })}
+        />
+        <Input
+          inputType="input"
+          title="Site"
+          placeholder="Property Site Sqtm"
+          handleClick={(e) => updateFormInput({ ...formInput, site: e.target.value })}
+        />
+        <Input
+          inputType="input"
+          title="Tax Code"
+          placeholder="000-000-000-00-000"
+          handleClick={(e) => updateFormInput({ ...formInput, taxCode: e.target.value })}
+        />
+        <Input
+          inputType="input"
+          title="Registry"
+          placeholder="Property Registry"
+          handleClick={(e) => updateFormInput({ ...formInput, registry: e.target.value })}
         />
 
         <Input
           inputType="textarea"
           title="Description"
-          placeholder="Asset Description"
+          placeholder="Property Description"
           handleClick={(e) => updateFormInput({ ...formInput, description: e.target.value })}
         />
 
         <Input
           inputType="number"
           title="Price"
-          placeholder="Asset Price"
+          placeholder="Property Price"
           handleClick={(e) => updateFormInput({ ...formInput, price: e.target.value })}
         />
 

@@ -1,6 +1,9 @@
 import heartOutline from './heart-outline.png';
 import heart from './heart.png';
 import logo from './logo.png';
+import honey from './honey.jpg';
+import noTitle from './no-title.jpg';
+import pixelCity from './pixelcity.png';
 import search from './Search.png';
 import tick from './tick.png';
 import cross from './cross.png';
@@ -78,4 +81,7 @@ export default {
   headerbg,
   loader,
   arrow,
+  honey,
+  noTitle,
+  pixelCity,
 };

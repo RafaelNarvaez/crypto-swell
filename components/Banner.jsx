@@ -1,4 +1,4 @@
-import Readt from 'react';
+import React from 'react';
 
 const Banner = ({ name, childStyles, parentStyle }) => (
   <div className={`relative w-full flex items-center z-0 overflow-hidden nft-gradient ${parentStyle}`}>
