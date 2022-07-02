@@ -117,7 +117,7 @@ const Navbar = () => {
       <div className="flex flex-1 flex-row justify-start">
         <Link href="/">
           <div className="flexCenter md:hidden cursor-pointer" onClick={() => setActive('Explore NFTs')}>
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
+            <Image src={images.logo} objectFit="contain" width={50} height={50} alt="logo" />
             <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">CrpytoSwell</p>
           </div>
         </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
               setIsOpen(false);
             }}
           >
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
+            <Image src={images.logo} objectFit="contain" width={100} height={100} alt="logo" />
           </div>
         </Link>
       </div>
