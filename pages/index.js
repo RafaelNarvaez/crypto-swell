@@ -164,7 +164,7 @@ const Home = () => {
                     key={`nft-${i}`}
                     nft={{
                       i,
-                      name: `Nifty NFT ${i}`,
+                      name: `Home In Bayamon ${i}`,
                       price: (10 - i * 0.534).toFixed(2),
                       seller: `0x${makeid(3)}...${makeid(4)}`,
                       owner: `0x${makeid(3)}...${makeid(4)}`,
