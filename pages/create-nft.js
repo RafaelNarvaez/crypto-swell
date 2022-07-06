@@ -35,7 +35,7 @@ const CreateItem = () => {
   const { getRootProps, getInputProps, isDragActive, isDragAccept, isDragReject } = useDropzone({
     onDrop,
     accept: 'image/*',
-    maxSize: 5000000,
+    maxSize: 500000000,
   });
 
   // add tailwind classes acording to the file status
@@ -91,8 +91,8 @@ const CreateItem = () => {
                 <div className="my-12 w-full flex justify-center">
                   <Image
                     src={images.upload}
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
                     objectFit="contain"
                     alt="file upload"
                     className={theme === 'light' ? 'filter invert' : undefined}
@@ -125,13 +125,13 @@ const CreateItem = () => {
         <Input
           inputType="input"
           title="Square foot"
-          placeholder="Property Sqft"
+          placeholder="Property SF"
           handleClick={(e) => updateFormInput({ ...formInput, sqft: e.target.value })}
         />
         <Input
           inputType="input"
           title="Site"
-          placeholder="Property Site Sqtm"
+          placeholder="Property Site SM"
           handleClick={(e) => updateFormInput({ ...formInput, site: e.target.value })}
         />
         <Input
